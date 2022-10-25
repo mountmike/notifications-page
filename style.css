@@ -1,0 +1,51 @@
+* {
+    border: 1px red solid;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    margin-top: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
