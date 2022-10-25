@@ -1,5 +1,19 @@
+/*
 * {
     border: 1px red solid;
+}
+*/
+
+@font-face {
+    font-family: PlusJakartaBold;
+    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: PlusJakartaReg;
+    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+    font-weight: 500;
 }
 
 body {
@@ -9,6 +23,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    background-color: #d9dded;
+    font-family: PlusJakartaReg;
 }
 
 header {
@@ -19,7 +35,11 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 5px;
 }
 
 footer {
@@ -40,6 +60,51 @@ footer {
     align-items: center;
     gap: 10px;
 }
+
+.noti-number {
+    background-color: darkblue;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-container-active {
+    display: flex;
+    gap: 20px;
+    background-color:#d9dded;
+    border-radius: 10px;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+}
+
+.notifi-content {
+    justify-content: center;
+}
+
+.profile-name {
+    font-family: PlusJakartaBold;
+}
+
+.notifi-time {
+    font-weight: 100;
+}
+
+.private-message {
+    font-family: PlusKakartaReg;
+    border: 1px grey solid;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
 
 .attribution { 
     font-size: 11px; 
