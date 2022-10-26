@@ -48,7 +48,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    min-width: 25%;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
@@ -86,6 +86,12 @@ footer {
     color: var(--Grayishblue)
 }
 
+#markRead:hover {
+    margin: 10px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
 .notification-container {
     display: flex;
     align-items: flex-start;
@@ -93,7 +99,7 @@ footer {
     border-radius: 10px;
 }
 
-.notification-container-active {
+.active, .notification-container {
     display: flex;
     background-color:#d9dded;
     border-radius: 10px;
@@ -123,8 +129,14 @@ footer {
     margin: 5px;
 }
 
-.profile-name {
+#profileName {
     font-family: PlusJakartaBold;
+}
+
+#profileName:hover {
+    font-family: PlusJakartaBold;
+    color: var(--blue);
+    cursor: pointer;
 }
 
 .notifi-time {
@@ -139,14 +151,37 @@ footer {
     margin: 10px 0px;
 }
 
-.group-title {
+.private-message:hover {
+    font-family: PlusJakartaReg;
+    color: var(--Grayishblue);
+    background-color: var(--Lightgrayishblue2);
+    border: 1px solid var(--Lightgrayishblue2);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#groupTitle {
     color: var(--blue);
     font-family: PlusJakartaBold;
 }
 
-.post-title {
+#groupTitle:hover {
+    color: var(--blue);
+    font-family: PlusJakartaBold;
+    cursor: pointer;
+}
+
+#postTitle {
     color: var(--Darkgrayishblue);
     font-family: PlusJakartaBold;
+}
+
+#postTitle:hover {
+    color: var(--blue);
+    font-family: PlusJakartaBold;
+    cursor: pointer;
 }
 
 .picture-preview-container {
@@ -160,6 +195,10 @@ footer {
 .picture-preview {
     height: 50px;
     width: auto;
+}
+
+.picture-preview:hover {
+    cursor: pointer;
 }
 
 footer {
