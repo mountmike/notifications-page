@@ -4,6 +4,18 @@
 }
 */
 
+:root {
+    --blue: hsl(219, 85%, 26%);
+    --Red: hsl(1, 90%, 64%);
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: rgb(131, 138, 150);
+    --Darkgrayishblue: hsl(219, 13%, 35%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+  }
+
 @font-face {
     font-family: PlusJakartaBold;
     src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
@@ -25,6 +37,7 @@ body {
     margin: 0;
     background-color: #d9dded;
     font-family: PlusJakartaReg;
+    font-size: 16px;
 }
 
 header {
@@ -62,7 +75,7 @@ footer {
 }
 
 .noti-number {
-    background-color: darkblue;
+    background-color: var(--blue);
     color: white;
     padding: 0px 10px;
     border-radius: 5px;
@@ -70,15 +83,21 @@ footer {
 
 .notification-container {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
 }
 
 .notification-container-active {
     display: flex;
-    gap: 20px;
     background-color:#d9dded;
     border-radius: 10px;
+}
+
+.profile-pic-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
 }
 
 .profile-picture {
@@ -88,6 +107,11 @@ footer {
 
 .notifi-content {
     justify-content: center;
+    padding: 5px;
+}
+
+.notifi-content p {
+    margin: 5px;
 }
 
 .profile-name {
@@ -95,14 +119,25 @@ footer {
 }
 
 .notifi-time {
-    font-weight: 100;
+    color: var(--Grayishblue)
 }
 
 .private-message {
-    font-family: PlusKakartaReg;
-    border: 1px grey solid;
-    padding: 5px;
+    font-family: PlusJakartaReg;
+    color: var(--Grayishblue);
+    border: 1px solid var(--Grayishblue);
+    padding: 10px;
     margin: 10px 0px;
+}
+
+.group-title {
+    color: var(--blue);
+    font-family: PlusJakartaBold;
+}
+
+.post-title {
+    color: var(--Darkgrayishblue);
+    font-family: PlusJakartaBold;
 }
 
 
