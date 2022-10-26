@@ -81,6 +81,11 @@ footer {
     border-radius: 5px;
 }
 
+#markRead {
+    margin: 10px;
+    color: var(--Grayishblue)
+}
+
 .notification-container {
     display: flex;
     align-items: flex-start;
@@ -96,6 +101,7 @@ footer {
 
 .profile-pic-container {
     display: flex;
+    flex: 1;
     align-items: flex-start;
     margin: 10px;
 }
@@ -105,12 +111,15 @@ footer {
     height: 50px;
 }
 
-.notifi-content {
+.notifi-content-container {
+    display: flex;
+    flex: 10;
+    flex-direction: column;
     justify-content: center;
     padding: 5px;
 }
 
-.notifi-content p {
+.notifi-content-container p {
     margin: 5px;
 }
 
@@ -140,9 +149,25 @@ footer {
     font-family: PlusJakartaBold;
 }
 
+.picture-preview-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.picture-preview {
+    height: 50px;
+    width: auto;
+}
+
+footer {
+    padding: 20px;
+}
 
 .attribution { 
-    font-size: 11px; 
+    font-size: .9em; 
     text-align: center; 
 }
 
